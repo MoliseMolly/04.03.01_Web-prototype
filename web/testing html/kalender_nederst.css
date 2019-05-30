@@ -1,0 +1,121 @@
+.kalender {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+    width: 400px;
+    flex-direction: column;
+}
+
+.modul1,
+.modul2,
+.modul3,
+.modul4 {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 2;
+    margin-bottom: 15px;
+}
+
+
+.tid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: auto;
+    align-content: center;
+
+}
+
+.tidspunkt1 {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+}
+
+.tidspunkt1a {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    ;
+
+}
+
+.tidspunkt2 {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+}
+
+.modul2,
+.modul3,
+.modul4 {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tekst {
+    flex-grow: 2;
+    background-color: beige;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    padding: 10px;
+    padding-bottom: 60px;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+
+}
+
+.teksta {
+    flex-grow: 2;
+    background-color: beige;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    padding: 10px;
+    padding-bottom: 60px;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+
+
+
+}
+
+.indhold {
+    flex-grow: 2;
+
+}
+
+
+
+.indhold_img {
+    align-self: center;
+    flex-basis: 0;
+}
+
+.fri {
+    flex-grow: 2;
+    background-color: white;
+
+}
+
+}

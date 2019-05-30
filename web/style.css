@@ -1,0 +1,605 @@
+/*CSS content*/
+
+/*
+Common styling
+Variables
+Layout / Grid
+Individual page styling
+- forside
+-login
+- menu
+-skema
+-materialer
+-afleveringer
+-aflevering udvidet
+Form styling
+*/
+
+
+/*Common styling - alle sider*/
+
+@font-face {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+body {
+
+    width: 400px;
+    height: 100%;
+    background-color: #FAF7F7
+}
+
+
+
+
+.container {
+
+    background-color: #FAF7F7;
+    padding: 15px;
+
+}
+
+.information {
+
+    background-color: #FAF7F7;
+
+}
+
+p {
+    font-family: canada-type-gibson;
+    color: #F58E81;
+    font-size: 12px;
+
+}
+
+h1 {
+    font-family: canada-type-gibson;
+    color: #F58E81;
+    font-size: 40px;
+
+
+}
+
+h2 {
+    font-family: canada-type-gibson;
+    color: #F58E81;
+    font-size: 20px;
+
+
+}
+
+h3 {
+    font-family: canada-type-gibson;
+    color: #F58E81;
+    font-size: 12px;
+
+}
+
+h4 {
+    font-family: canada-type-gibson;
+    color: #F58E81;
+    font-size: 12px;
+
+}
+
+h5 {
+    font-family: canada-type-gibson;
+    color: #F58E81;
+    font-size: 10px;
+    font-weight: 400;
+
+}
+
+/*Variables*/
+
+/*Layout / Grit */
+
+/*forside layout*/
+
+
+.header_frontpage {
+    display: grid;
+    grid-template-columns: 300px 50px 50px;
+    grid-template-rows: 20px 20px 20px;
+}
+
+.header_box div {
+    border: 1px solid black;
+}
+
+.kealogo {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+}
+
+.profil {
+    grid-column: 2 / span 1;
+
+    grid-row: 2;
+}
+
+.menu {
+    grid-column: 3 / span 1;
+
+    grid-row: 2;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px 110px 110px 110px;
+    grid-gap: 15px;
+}
+
+.container div {
+    border: 1px solid black;
+}
+
+
+.box1 {}
+
+.box2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.box3 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
+
+}
+
+/*Individual page styling*/
+
+/*forside*/
+
+.header_frontpage {
+
+    background-color: #EA5045;
+    padding-left: 10px;
+}
+
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: white;
+
+}
+
+
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.box3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.container h3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*log-in skærm*/
+
+.login {
+    background-color: #FAF7F7;
+    padding: 15px;
+
+}
+
+.header_login {
+    background-color: #EA5045;
+    width: 400px;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.container_login {
+    background-color: #FAF7F7;
+    padding: 15px;
+    height: 325px;
+
+}
+
+/*menu styling*/
+
+.container_menu {
+    background-color: #3F3140;
+
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.menu_indhold {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.menu_indhold h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.logud {
+    background-color: #EA847C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.logud h2 {
+    color: white;
+}
+
+/*indholdet i grå oversigt*/
+
+.oversigt {
+
+    background-color: #DEDCDB;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    justify-content: space-between;
+
+}
+
+
+.oversigt h3 {
+    color: black;
+}
+
+.oversigt h4,
+h5 {
+    color: #707070;
+}
+
+.skema {
+    padding: 10px;
+    background-color: #3F3140;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.skema h3 {
+    margin-left: 5px;
+    color: white;
+}
+
+/*dato styling*/
+
+.dato {
+    padding: 2px;
+    background-color: #3F3140;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+
+.dagsdato {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.maaned p {
+    color: white;
+    margin: 5px;
+    font-size: 15px;
+
+}
+
+.dag p {
+    color: white;
+    margin: 5px;
+    font-size: 9px;
+}
+
+.datoen p {
+    color: white;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.dagsdato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: canada-type-gibson;
+}
+
+
+/*skema styling*/
+
+.kalender {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+    width: 400px;
+    flex-direction: column;
+}
+
+.modul1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 2;
+    margin-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+    width: auto;
+
+}
+
+.modul2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 2;
+    margin-bottom: 15px;
+
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+    width: auto;
+
+}
+
+
+.modul3 {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 2;
+    margin-bottom: 15px;
+}
+
+.tid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: auto;
+    align-content: center;
+
+}
+
+.tid p {
+    color: #BCC5D3;
+}
+
+.indhold,
+indhold2,
+p,
+h4 {
+    color: black;
+}
+
+.tidspunkt1 {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tidspunkt1a {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    ;
+
+}
+
+.tidspunkt2 {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+}
+
+.tidspunkt1b {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+}
+
+
+.tidspunkt2b {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+}
+
+
+.tekst {
+    flex-grow: 2;
+    background-color: #F2F1F0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    padding: 10px;
+
+}
+
+.tekst2 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+
+
+
+}
+
+
+.indhold {
+    flex-grow: 2;
+
+
+
+}
+
+.indhold2 {
+    background-color: #F2F1F0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+
+}
+
+
+.indhold_img {
+    align-self: center;
+    flex-basis: 0;
+
+}
+
+.plan {
+    padding-left: 10px;
+    height: 60px;
+}
+
+.tom {
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid;
+    border-bottom-color: #E2E8ED;
+
+}
+
+.tom2 {
+    background-color: white;
+    height: 61.5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+}
+
+.indhold_img2 {
+    align-self: center;
+    padding-right: 10px;
+}
+
+
+
+/*materialer styling*/
+
+.materialer_indhold {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    flex-direction: column;
+    height: 590px;
+}
+
+.materialer_indhold h3 {
+    color: black;
+}
+
+.materialer_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #F2F1F0;
+    margin: 10px;
+
+}
+
+.materialer_img {
+    align-self: flex-end;
+}
+
+
+/*aflevering styling*/
+
+
+
+/*Form styling*/
+
+::placeholder {
+    color: #F58E81;
+}
+
+label,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit] {
+    border: 1px;
+    border-style: solid;
+    border-color: #FAF7F7;
+    border-radius: 9999em;
+}

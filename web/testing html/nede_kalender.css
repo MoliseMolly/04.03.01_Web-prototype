@@ -1,0 +1,120 @@
+.kalender {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+    width: 400px;
+    flex-direction: column;
+}
+
+.modul1,
+.modul2,
+.modul3,
+.modul4 {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 2;
+    margin-bottom: 15px;
+}
+
+.tid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: auto;
+    align-content: center;
+
+}
+
+.tidspunkt1 {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+}
+
+.tidspunkt1a {
+
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    ;
+
+}
+
+.tidspunkt2 {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+}
+
+.modul2,
+.modul3,
+.modul4 {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tekst2 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E8ED;
+
+
+
+}
+
+.indhold {
+    background-color: #F2F1F0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+
+}
+
+.plan {
+    padding-left: 10px;
+}
+
+.tom {
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid;
+    border-bottom-color: #E2E8ED;
+
+}
+
+.tom2 {
+    background-color: white;
+    height: 84.5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    border-top-style: solid;
+    border-top-color: #E2E8ED;
+
+}
+
+.indhold_img {
+    align-self: center;
+    padding-right: 10px;
+}
