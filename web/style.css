@@ -2,7 +2,7 @@
 
 /*
 Common styling
-Variables
+Style for content pages
 Layout / Grid
 Individual page styling
 - forside
@@ -25,11 +25,20 @@ Form styling
 
 }
 
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
 body {
 
     width: 400px;
     height: 100%;
-    background-color: #FAF7F7
+    background-color: #FAF7F7;
+    margin: 0;
+
 }
 
 
@@ -93,69 +102,7 @@ h5 {
 
 }
 
-/*Variables*/
-
-/*Layout / Grit */
-
-/*forside layout*/
-
-
-.header_frontpage {
-    display: grid;
-    grid-template-columns: 300px 50px 50px;
-    grid-template-rows: 20px 20px 20px;
-}
-
-.header_box div {
-    border: 1px solid black;
-}
-
-.kealogo {
-    grid-column: 1 / span 1;
-    grid-row: 2;
-}
-
-.profil {
-    grid-column: 2 / span 1;
-
-    grid-row: 2;
-}
-
-.menu {
-    grid-column: 3 / span 1;
-
-    grid-row: 2;
-
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 110px 110px 110px;
-    grid-template-rows: 110px 110px 110px 110px 110px 110px;
-    grid-gap: 15px;
-}
-
-.container div {
-    border: 1px solid black;
-}
-
-
-.box1 {}
-
-.box2 {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-}
-
-.box3 {
-    grid-column: 2 / span 2;
-    grid-row: 4 / span 2;
-
-}
-
-/*Individual page styling*/
-
-/*forside*/
+/*Style for content pages*/
 
 .header_frontpage {
 
@@ -163,112 +110,6 @@ h5 {
     padding-left: 10px;
 }
 
-
-.box1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
-    background-color: white;
-
-}
-
-
-
-.box2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-}
-
-.box3 {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-}
-
-.container h3 {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-/*log-in skærm*/
-
-.login {
-    background-color: #FAF7F7;
-    padding: 15px;
-
-}
-
-.header_login {
-    background-color: #EA5045;
-    width: 400px;
-    height: 175px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.container_login {
-    background-color: #FAF7F7;
-    padding: 15px;
-    height: 325px;
-
-}
-
-/*menu styling*/
-
-.container_menu {
-    background-color: #3F3140;
-
-    width: 400px;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-
-}
-
-.menu_indhold {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-
-}
-
-.menu_indhold h2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.logud {
-    background-color: #EA847C;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.logud h2 {
-    color: white;
-}
 
 /*indholdet i grå oversigt*/
 
@@ -294,19 +135,6 @@ h5 {
     color: #707070;
 }
 
-.skema {
-    padding: 10px;
-    background-color: #3F3140;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.skema h3 {
-    margin-left: 5px;
-    color: white;
-}
 
 /*dato styling*/
 
@@ -354,6 +182,184 @@ h5 {
     flex-direction: column;
     font-family: canada-type-gibson;
 }
+
+/*bottom skema styling*/
+
+footer a {
+    padding: 10px;
+    background-color: #3F3140;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+footer h3 {
+    color: white;
+}
+
+/*Layout / Grit */
+
+/*header til: forside, skema, materialer, afleveringer og afleveringer udvidet*/
+
+.header_frontpage {
+    display: grid;
+    grid-template-columns: 300px 50px 50px;
+    grid-template-rows: 20px 20px 20px;
+}
+
+
+.kealogo {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+}
+
+.profil {
+    grid-column: 2 / span 1;
+
+    grid-row: 2;
+}
+
+.dropdown {
+    grid-column: 3 / span 1;
+
+    grid-row: 2;
+
+}
+
+/*grid til forsidens indhold*/
+.container {
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px 110px 110px 110px;
+    grid-gap: 15px;
+}
+
+.box1 {}
+
+.box2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.box3 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
+
+}
+
+
+/*Individual page styling*/
+
+/*forside*/
+
+
+
+.container h3,
+a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.box1,
+.box2,
+.box3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+/*menu styling*/
+
+.container_menu {
+    background-color: #3F3140;
+
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.dropbtn {
+    background-color: #EA5045;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #EA5045;
+}
+
+.dropdown {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3F3140;
+    width: 400px;
+    overflow: auto;
+    z-index: 1;
+    transform: scale(1);
+    transform-origin: right;
+    transform: translateX(-90%);
+}
+
+
+.dropdown-content a,
+.a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.show {
+    display: block;
+}
+
+.dropdown-content .a {
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+
+.logud {
+    background-color: #EA847C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 120px;
+
+}
+
+.logud h2 {
+    color: white;
+}
+
+
 
 
 /*skema styling*/
@@ -585,15 +591,64 @@ h4 {
 
 /*aflevering styling*/
 
+/*log-in skærm*/
+
+
+.header_login {
+    background-color: #EA5045;
+    width: 400px;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.header_login h3 {
+    color: white;
+    padding: 10px;
+}
+
+.container_login {
+    background-color: #FAF7F7;
+    padding: 20px;
+    padding-top: 90px;
+    height: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+
+}
+
+.streg {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 129px;
+    background-color: #DEDCDB;
+    margin-top: 100px;
+    width: 20px;
+    height: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: #DEDCDB;
+    border-radius: 9999em;
+}
+
+
 
 
 /*Form styling*/
 
 ::placeholder {
     color: #F58E81;
+    padding-left: 10px;
 }
 
-label,
+
+
 input[type=text],
 input[type=email],
 input[type=password],
@@ -602,4 +657,64 @@ input[type=submit] {
     border-style: solid;
     border-color: #FAF7F7;
     border-radius: 9999em;
+    height: 40px;
+    width: 290px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+
+
+
+}
+
+label,
+.container_login a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    border: 1px;
+    border-bottom-color: #EA5045;
+    border-style: solid;
+    border-radius: 999999em;
+    background-color: #EA5045;
+    padding: 5px;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+
+}
+
+a:hover {
+    color: darkred;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: #EA5045;
+    border: solid #EA5045;
+    background: white url(img_icons/facebook_icon.svg) no-repeat;
+    background-position: 10px;
+
+}
+
+input[type=submit]:hover {
+    color: darkred;
+    border: solid darkred;
+}
+
+
+input[value=Continue] {
+    background-color: #EA5045;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
 }
